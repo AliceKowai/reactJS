@@ -1,0 +1,36 @@
+.bg{
+    background-image:url('../images/xS.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 500px;
+    margin:0 auto;
+    padding: 20px;
+    position: absolute;
+    -webkit-mask-image: linear-gradient(to top, transparent 5%, black 60%);
+}
+
+.container{
+    position: absolute;
+    top:50px;
+    left:10px;
+}
+
+.perfil{
+    border-radius: 100%;
+    overflow: hidden;
+    height: 200px;
+    width:200px;
+    background: black;
+    margin: 0 auto;
+}
+
+.img_perfil{
+    width: 100%;
+}
+
+.titulo{
+    height: 220px;
+    width:500px;
+}
