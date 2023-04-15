@@ -3,17 +3,14 @@ import bg from '../images/xS.gif'
 import styles from './header.module.css'
 function Header() {
   return (
-    <header class={styles.header}>
-        <div class={styles.bg}>
+    <header>
+      <div className={styles.bg}>
+        <div className={styles.perfil}>
+          <div className={styles.container}>
+            <img className={styles.img_perfil} src={perfil} />
+          </div>
         </div>
-        <div class={styles.container}>
-            <div class={styles.perfil}>
-                <img class={styles.img_perfil} src={perfil}/>
-            </div>
-            <div class={styles.titulo}>
-                <h1>Alice Costa</h1>
-            </div>
-        </div>
+      </div>
     </header>
   );
 }
