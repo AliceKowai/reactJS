@@ -1,0 +1,33 @@
+.mainContainer{
+    background-color: rgba(10,23,55,0.5);
+}
+
+.linkbuttom{
+    width: 200px;
+    background-color: rgba(10,23,55,0.5);
+    list-style: none;
+    
+}
+.bg{
+    background-repeat: no-repeat;
+}
+
+.fotoPerfil{
+width: 200px;
+height: 200px;
+overflow: hidden;
+margin: 0 auto;
+}
+
+.fotoPerfil img{
+width:100%
+}
+
+.bg{
+    position: relative;
+    background: #fc0;
+    width: 400px; /* ajuste a largura */
+    height: 500px; /* ajuste a altura */
+    margin: 0 auto; /* alinha a div no centro */
+    top: -35px;
+}

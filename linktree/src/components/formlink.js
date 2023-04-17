@@ -1,50 +1,58 @@
 import React, { useState, useEffect } from 'react';
 import styles from "./formlink.module.css"
-import Header from "./header";
 
 
 function FormLink(props) {
 
-    const [components, setComponents] = useState([]);
-
-    useEffect(() => {
-    }, [components]);
+    const [inputIds, setInputIds] = useState([]);
+    const [nomeLink, setNomeLink] = useState([])
 
 
-    const handleClick = () => {
-        setComponents([...components, <MyComponent key={components.length} />]);
+    const handleAddInput = () => {
+        const newInputId = `input${inputIds.length + 1}`;
+        const nomeInputLink = `nomeLink${nomeLink.length + 1}`
+        setInputIds([...inputIds, newInputId])
+        setNomeLink([...nomeLink, nomeInputLink]);
     };
-
-    function MyComponent() {
-        return <input type="text" className={`form-control mt-2 p-2 ${styles.input_link}`}  placeholder="link 1" onChange={props.onChange}  />;
-    }
-
     return (
         <div className="p-3">
             <h2>Lista de links</h2>
             <form className={styles.cagao}>
                 <div class="row">
                     <div class="col">
-                        <input type="text" className={`form-control p-2 ${styles.input_link}`} placeholder="link da foto de perfil" onChange={props.onChange} />
+                        <input id='fotoPerfil' type="text" className={`form-control p-2 ${styles.input_link}`} placeholder="link da foto de perfil" onChange={props.onChange} />
                     </div>
                     <div class="col">
-                        <input type="text" className={`form-control p-2 ${styles.input_link}`} placeholder="link do background" onChange={props.onChange} />
+                        <input id='bg' type="text" className={`form-control p-2 ${styles.input_link}`} placeholder="link do background" onChange={props.onChange} />
                     </div>
                 </div>
+                <input id='titulo' type="text" className={`form-control p-2 mt-2 ${styles.input_link}`} placeholder="Titulo, ex: Desenvolvedor web" onChange={props.onChange} />
                 <div class="row">
                     <div class="col py-2">
-                        <input type="text" className={`form-control p-2 ${styles.input_link}`} placeholder="Nome" onChange={props.onChange} />
+                        <input id='nome' type="text" className={`form-control p-2 ${styles.input_link}`} placeholder="Nome" onChange={props.onChange} />
                     </div>
                     <div class="col py-2">
-                        <input type="text" className={`form-control p-2 ${styles.input_link}`} placeholder="Sobrenome" onChange={props.onChange}  />
+                        <input id='sobrenome' type="text" className={`form-control p-2 ${styles.input_link}`} placeholder="Sobrenome" onChange={props.onChange} />
+                    </div>
+                    <div className='row'>
+                        <div class="col py-2">
+                            <p>Nome dos links</p>
+                            {nomeLink.map((id) => (
+                                <input key={id} id={id} type="text" className={`form-control p-2 pt-7 ${styles.input_link}`} placeholder="ex: Instagram" onChange={props.onChange} />
+                            ))}
+                        </div>
+                        <div class="col py-2">
+                            <p>Link</p>
+                            {inputIds.map((id) => (
+                                <input key={id} id={id} type="text" className={`form-control p-2 pt-7 ${styles.input_link}`} placeholder="ex:https://www.instagram.com/alice_kowai/" onChange={props.onChange} />
+                            ))}
+                        </div>
                     </div>
                 </div>
-                <input type="text" className={`form-control p-2 ${styles.input_link}`} placeholder="link 1" onChange={props.onChange} />
                 <div id="co">
-                {components}
                 </div>
-                <button type="button" onClick={handleClick} className={`btn p-2 m-4 ${styles.botao_link}`}>Adicionar</button>
-                <button type="submit" className={`btn p-2 ${styles.botao_link}`}>Concluir</button>
+                <button type="button" onClick={handleAddInput} className={`btn p-2 m-4 ${styles.botao_link}`}>Adicionar</button>
+                <button type="submit" onClick={props.onClick} className={`btn p-2 ${styles.botao_link}`}>Concluir</button>
             </form>
         </div>
     );
