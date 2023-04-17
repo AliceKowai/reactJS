@@ -11,7 +11,6 @@ function App() {
 
   function onInputChange(e) {
     setLinks(prevState => ({ ...prevState, [e.target.id]: e.target.value }));
-    console.log(links)
 }
 
 function btnSaveClick(e) {
@@ -23,11 +22,11 @@ function btnSaveClick(e) {
     return setLink(JSON.parse(link))
 }
   return (
-    <div className="App mx-0 my-auto">
+    <div className="App">
       {
         Object.keys(link).length === 0 ? 
       
-      <div className="">
+      <div className="d-flex flex-column justify-content-center align-items-center">
         <p>Preencha todos os campos, por favor</p>
         <FormLink onChange={onInputChange} onClick={btnSaveClick}/>
       </div>

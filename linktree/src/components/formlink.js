@@ -15,7 +15,7 @@ function FormLink(props) {
         setNomeLink([...nomeLink, nomeInputLink]);
     };
     return (
-        <div className="p-3">
+        <div className="p-3 w-75 flex-column d-flex align-items-center">
             <h2>Lista de links</h2>
             <form className={styles.cagao}>
                 <div class="row">
@@ -38,13 +38,13 @@ function FormLink(props) {
                         <div class="col py-2">
                             <p>Nome dos links</p>
                             {nomeLink.map((id) => (
-                                <input key={id} id={id} type="text" className={`form-control p-2 pt-7 ${styles.input_link}`} placeholder="ex: Instagram" onChange={props.onChange} />
+                                <input key={id} id={id} type="text" className={`form-control p-2 pt-7 mt-2 ${styles.input_link}`} placeholder="ex: Instagram" onChange={props.onChange} />
                             ))}
                         </div>
                         <div class="col py-2">
                             <p>Link</p>
                             {inputIds.map((id) => (
-                                <input key={id} id={id} type="text" className={`form-control p-2 pt-7 ${styles.input_link}`} placeholder="ex:https://www.instagram.com/alice_kowai/" onChange={props.onChange} />
+                                <input key={id} id={id} type="text" className={`form-control mt-2 p-2 pt-7 ${styles.input_link}`} placeholder="ex:https://www.instagram.com/alice_kowai/" onChange={props.onChange} />
                             ))}
                         </div>
                     </div>
