@@ -5,6 +5,7 @@
     align-items:center;
     justify-content: center;
     padding: 4em;
+    border: 1px solid yellow
 }
 
 .home_container h1{

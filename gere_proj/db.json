@@ -1,21 +1,44 @@
 {
-    "projects": [],
-    "categories":[
-        {
-            "id":1,
-            "name": "Infra"
-        },
-        {
-            "id":2,
-            "name": "Desenvolvimento"
-        },
-        {
-            "id":3,
-            "name": "Design"
-        },
-        {
-            "id":4,
-            "name": "Planejamento"
-        }
-    ]
+  "projects": [
+    {
+      "name": "marry me archie",
+      "budget": "1200",
+      "categories": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 1
+    },
+    {
+      "name": "Não, Alice",
+      "budget": "0",
+      "categories": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Infra"
+    },
+    {
+      "id": 2,
+      "name": "Desenvolvimento"
+    },
+    {
+      "id": 3,
+      "name": "Design"
+    },
+    {
+      "id": 4,
+      "name": "Planejamento"
+    }
+  ]
 }
