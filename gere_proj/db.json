@@ -1,8 +1,8 @@
 {
   "projects": [
     {
-      "name": "marry me archie",
-      "budget": "1200",
+      "name": "Preciso estudar",
+      "budget": "2000",
       "categories": {
         "id": "2",
         "name": "Desenvolvimento"
@@ -12,7 +12,7 @@
       "id": 1
     },
     {
-      "name": "Não, Alice",
+      "name": "Preciso estudar",
       "budget": "0",
       "categories": {
         "id": "3",
@@ -23,15 +23,26 @@
       "id": 2
     },
     {
-      "name": "Pensa e respira",
-      "budget": "20",
+      "name": "Kowai",
+      "budget": "7",
       "categories": {
-        "id": "1",
-        "name": "Infra"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": [],
       "id": 3
+    },
+    {
+      "name": "Preciso estudar",
+      "budget": "9",
+      "categories": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
     }
   ],
   "categories": [
