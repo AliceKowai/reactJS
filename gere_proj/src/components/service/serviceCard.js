@@ -3,7 +3,7 @@ import styles from '../projects/projectCard.module.css'
 
 function ServiceCard({id, name, cost, description, handleRemove}) {
 
-    const remove(e){
+    const remove = (e) =>{
         e.preventDefault()
         handleRemove(id, cost)
     }
@@ -18,7 +18,7 @@ function ServiceCard({id, name, cost, description, handleRemove}) {
                 {description}
             </p>
             <div className={styles.project_card_actions}>
-                <button onClick={remove}><<BsFillTrash2Fill/><BsFillTrash2Fill/></button>
+                <button onClick={remove}><BsFillTrash2Fill/><BsFillTrash2Fill/></button>
             </div>
         </div>
     )

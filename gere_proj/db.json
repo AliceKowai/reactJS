@@ -1,8 +1,8 @@
 {
   "projects": [
     {
-      "name": "Preciso estudar",
-      "budget": "2000",
+      "name": "Maria Alice Teixeira da Costa",
+      "budget": "122",
       "categories": {
         "id": "2",
         "name": "Desenvolvimento"
@@ -10,39 +10,6 @@
       "cost": 0,
       "services": [],
       "id": 1
-    },
-    {
-      "name": "Preciso estudar",
-      "budget": "0",
-      "categories": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
-    },
-    {
-      "name": "Kowai",
-      "budget": "7",
-      "categories": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 3
-    },
-    {
-      "name": "Preciso estudar",
-      "budget": "9",
-      "categories": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 4
     }
   ],
   "categories": [
