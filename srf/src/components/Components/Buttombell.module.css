@@ -1,0 +1,28 @@
+.notification svg{
+    color:#014fa1;
+    font-size: 25px;
+}
+
+.notification {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    border-radius: 2px;
+  }
+  
+  .notification:hover {
+    background: red;
+  }
+  
+  .notification .badge {
+    position: absolute;
+    top: -2px;
+    right: 18px;
+    font-size: 10px;
+    width: 15px;
+    height: 15px;
+    line-height: 14px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+  }

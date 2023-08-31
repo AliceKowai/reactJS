@@ -1,0 +1,8 @@
+.header{
+    background-color: #fff;  
+}
+
+.container_nav{
+    display: flex;
+    justify-content: space-between; 
+}

@@ -31,7 +31,7 @@ function btnSaveClick(e) {
         <FormLink onChange={onInputChange} onClick={btnSaveClick}/>
       </div>
       :
-      <div className="08">
+      <div className="">
         <Main fotoPerfil={link.fotoPerfil} bg={link.bg} nome={link.nome} sobrenome={link.sobrenome} titulo={link.titulo} link1={link.nomeLink1} url1={link.input1} link2={link.nomeLink2} url2={link.input2} link3={link.nomeLink3} url3={link.input3} link4={link.nomeLink4} url4={link.input4} link5={link.nomeLink5} url5={link.input5} />
       </div>
     }
