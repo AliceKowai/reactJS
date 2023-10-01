@@ -1,17 +1,5 @@
 {
-  "projects": [
-    {
-      "name": "Maria Alice Teixeira da Costa",
-      "budget": "122",
-      "categories": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 1
-    }
-  ],
+  "projects": [],
   "categories": [
     {
       "id": 1,
